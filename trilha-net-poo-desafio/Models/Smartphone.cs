@@ -4,11 +4,6 @@ namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
-        public string Numero { get; set; }
-        private string Modelo { get; set; }
-        private string IMEI { get; set; }
-        private int Memoria { get; set; }
-
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
@@ -17,16 +12,18 @@ namespace DesafioPOO.Models
             Memoria = memoria;
         }
 
-        public void Ligar()
-        {
-            Console.WriteLine($"Ligando para o número {Numero}");
-        }
+        public string Numero { get; set; }
+        private string Modelo { get; set; }
+        private string IMEI { get; set; }
+        private int Memoria { get; set; }
 
-        public void ReceberLigacao()
-        {
-            Console.WriteLine($"Recebendo ligação do número: {Numero}");
-        }
+        public abstract void Ligar();
+
+        public abstract void ReceberLigacao();
         
-        public abstract void InstalarAplicativo(string nomeApp);
+        public virtual void InstalarAplicativo(string nomeApp)
+        {
+            Console.WriteLine($"Instando o App {nomeApp}");
+        }
     }
 }

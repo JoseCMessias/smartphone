@@ -8,7 +8,17 @@ namespace DesafioPOO.Models
 
         public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Instando o {nomeApp}");
+            Console.WriteLine($"Instando o {nomeApp} no disposivo IOS");
+        }
+
+        public override void Ligar()
+        {
+            Console.WriteLine($"Ligando para o número {Numero}");
+        }
+
+        public override void ReceberLigacao()
+        {
+            Console.WriteLine($"Recebendo ligação do número: {Numero}");
         }
     }
 }
