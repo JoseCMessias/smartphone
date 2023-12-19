@@ -1,5 +1,5 @@
 # DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+[Link da DIO](www.dio.me.com)
 
 ## Desafio de projeto
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
@@ -11,7 +11,7 @@ Você é responsável por modelar um sistema que trabalha com celulares. Para is
 Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
 Você deve criar as suas classes de acordo com o diagrama abaixo:
 
-![Diagrama classes](Imagens/diagrama.png)
+![Diagrama classes](/Smartphone/Imagens/diagrama.png)
 
 ## Regras e validações
 1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
